@@ -8,6 +8,14 @@
 % softwareRepository SoftwareType softwareType Thermometer VideoCard
 
 % % Write your metamodel below this
+% task 1
+class CPSModel {
+    contains SoftwareType[] softwareRepository
+}
+
+class SoftwareType {
+    SoftwareType[] dependsOnSpecificSoftware
+}
 
 
 
