@@ -1,3 +1,27 @@
 package hu.bme.mit.ase.cps.types.computers;
+//task1
+public class {{ name }} extends Computer {
 
-// Write here your solution for Task 1
+    public {{ name }}(String name, String ip) {
+        super(name, ip);
+    }
+
+    @Override
+    String getOs() {
+        return "{{ os }}";
+    }
+
+    @Override
+    String getDescription() {
+        return "{{ description }}";
+    }
+
+    @Override
+    ComputerResources getResources() {
+        return new ComputerResources(
+            "{{ resources.memory }}",
+            "{{ resources.cpu }}",
+            "{{ resources.storage }}"
+        );
+    }
+}
